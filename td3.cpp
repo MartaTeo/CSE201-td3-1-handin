@@ -135,7 +135,7 @@ void merge_telemetry(double **telemetries,
     {
         for (int j = i+3; j < global_telemetry_current_size; j = j + 3)
         {
-            if (global_telemetry[i] > global_telemetry[j])
+            if (global_telemetry[i] >= global_telemetry[j])
             {
                 int aux = global_telemetry[i];
                 global_telemetry[i] = global_telemetry[j];
